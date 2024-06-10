@@ -1,0 +1,133 @@
+.mode button {
+  position: absolute;
+  right: 0px;
+  margin: 20px;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button.signup-button {
+  background-color: #28a745;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--toggle-bg);
+  border: 2px solid var(--toggle-border);
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.toggle-button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--toggle-button);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #fff;
+  --toggle-bg: #444;
+  --toggle-border: #555;
+  --toggle-button: #fff;
+}
+
+.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --toggle-bg: #ddd;
+  --toggle-border: #ccc;
+  --toggle-button: #000;
+}
+
+.light-mode .toggle-button {
+  transform: translateX(0);
+}
+
+.dark-mode .toggle-button {
+  transform: translateX(90px);
+}
+
+.toggle-label {
+  margin-left: 10px;
+}
